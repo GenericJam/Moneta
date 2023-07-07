@@ -19,7 +19,8 @@ The moving average is of the closing price only.
 ### Data
 
 You should create a mock dataset that you can work with for development and testing.
-Sample Record
+
+### Sample Record
 
 ```json
 {
