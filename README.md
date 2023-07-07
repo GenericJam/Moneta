@@ -2,8 +2,7 @@
 
 This is a coding test for a job.
 
-In this assignment, you are tasked with building an API that computes a moving average across
-OHLC data.
+In this assignment, you are tasked with building an API that computes a [moving average](https://en.wikipedia.org/wiki/Moving_average) across [OHLC](https://en.wikipedia.org/wiki/Open-high-low-close_chart) data.
 
 ### Requirements
 
@@ -13,7 +12,7 @@ OHLC data.
 3. GET /api/average?window=last_1_hour - should return the moving average
    of all items that were inserted to the data store in the past hour
 
-##### Note: 
+##### Note:
 
 The moving average is of the closing price only.
 
@@ -35,11 +34,11 @@ Sample Record
 ### Guidelines
 
 1. You can implement the assignment using any language/ framework you find to suitable
-for the task but using the Phoenix Framework is preferred.
+   for the task but using the Phoenix Framework is preferred.
 2. While the guidelines for this assignment are very loose, you should assume that API will
-be deployed to a production environment
+   be deployed to a production environment
 
-### Extra 
+### Extra
 
 It wasn't too much extra trouble so I also implemented `last_xx_minutes`/`last_xx_hours`/`last_xx_days`
 
@@ -47,7 +46,7 @@ It wasn't too much extra trouble so I also implemented `last_xx_minutes`/`last_x
 
 There's also a Livebook for ease of external testing. Maybe you don't trust my tests. :) Try your own.
 
-### Set up 
+### Set up
 
 ```bash
 mix deps.get

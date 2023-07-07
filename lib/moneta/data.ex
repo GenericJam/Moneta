@@ -104,6 +104,12 @@ defmodule Moneta.Data do
     Ohlc.changeset(ohlc, attrs)
   end
 
+  @doc """
+  Takes a string like last_10_items or last_1_hour and returns the relevant moving average
+  as %{average: 10.5}
+
+  There is no rounding happening
+  """
   def calc_window(window) do
     [_last, number, denomination] = String.split(window, "_")
     count = String.to_integer(number)
@@ -158,6 +164,7 @@ defmodule Moneta.Data do
     %{average: average}
   end
 
+  # Convert Decimal back into float for a record
   defp parse_decimal_per_record(record) do
     parsed =
       record
